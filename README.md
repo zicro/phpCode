@@ -5,3 +5,7 @@ Snippet Code for Php including :
 + MultiLanguages
 + ShortLink Script
 .. and More ..
+
+
+** You Must Create Databases Before using Codes
+(the Databases not included ...)
