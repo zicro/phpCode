@@ -4,10 +4,10 @@ Used :
 + php 5.3 or higher
 + mysql Database (use dbUsers.sql to create you Database)
 
-= information collected for each User: 
-[] Facebook ID
-[] Name 
-[] Email 
-[] Gender 
-[] Locale 
-[] Actual Picture Profile
+> information collected for each User: 
+- [x] Facebook ID
+- [x] Name 
+- [x] Email 
+- [x] Gender 
+- [x] Locale 
+- [x] Actual Picture Profile
