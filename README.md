@@ -20,3 +20,6 @@ Snippet Code for Php including :
 
 - Compress JavaScript Files
 (https://jscompress.com/)
+
+- extention (navigateur[Chrome;Firefox]) to full forms automaticly
+iMacros : tools extention for full forms data
