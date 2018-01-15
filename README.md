@@ -22,4 +22,4 @@ Snippet Code for Php including :
 (https://jscompress.com/)
 
 - extention (navigateur[Chrome;Firefox]) to full forms automaticly
-iMacros : tools extention for full forms data
+<b>iMacros</b> : tools extention for full forms data
