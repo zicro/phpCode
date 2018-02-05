@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Create autocomplete search with AngularJS and PHP</title>
+
+        <link href='style.css' rel='stylesheet' type='text/css'>
+        <script src="angular.min.js"></script>
+        
+    </head>
+    <body ng-app='myapp'>
+
+        <div ng-controller="fetchCtrl">
+        
+           <input type='text' ng-keyup='fetchUsers()' ng-model='searchText' placeholder='Enter text'><br>
+           <ul id='searchResult' >
+               <li ng-click='setValue($index)' ng-repeat="result in searchResult"  >{{ result.name }}</li>
+           </ul>   
+        </div>
+        
+        <!-- Script -->
+        <script>
+        var fetch = angular.module('myapp', []);
+
+        fetch.controller('fetchCtrl', ['$scope', '$http', function ($scope, $http) {
+            
+            // Fetch data
+            $scope.fetchUsers = function(){
+                
+                $http({
+                method: 'post',
+                url: 'getData.php',
+                data: {searchText:$scope.searchText}
+                }).then(function successCallback(response) {
+                    $scope.searchResult = response.data;
+                });
+            }
+
+            // Set value to search box
+            $scope.setValue = function(index){
+                $scope.searchText = $scope.searchResult[index].name;
+                $scope.searchResult = {};
+            }
+            
+        }]);
+
+        </script>
+        
+    </body>
+
+</html>
+
+
+        
