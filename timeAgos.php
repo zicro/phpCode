@@ -1,3 +1,4 @@
+<?php
 //Creating Function
 function TimeAgo ($oldTime, $newTime) {
 $timeCalc = strtotime($newTime) - strtotime($oldTime);
@@ -28,3 +29,4 @@ return $timeCalc;
 }
 
 echo TimeAgo($date, date("Y-m-d H:i:s"));
+?>
