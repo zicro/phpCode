@@ -1,4 +1,5 @@
 ```php
+<?php
 
 function getDistanceBetweenPointsNew($latitude1, $longitude1, $latitude2, $longitude2, $unit = 'miles') {
   $theta = $longitude1 - $longitude2; 
@@ -15,4 +16,5 @@ function getDistanceBetweenPointsNew($latitude1, $longitude1, $latitude2, $longi
   return (round($distance,2)); 
 }
 
+?>
 ```
